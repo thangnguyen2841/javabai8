@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm Năm Nhuận</title>
+</head>
+<body>
+<script>
+    let namNhap = parseInt(prompt("Nhập số năm vào đây cho Kao :"));
+    if (namNhap % 4 == 0)
+        if (namNhap % 100 == 0)
+            if (namNhap % 400 == 0) {
+                alert("Năm" + namNhap + "là năm nhuận");
+            } else {
+                alert("Năm" + namNhap + "không phải là năm nhuận");
+            }
+        else {
+            alert("Năm" + namNhap + "là năm nhuận");
+        }
+    else {
+        alert("Năm" + namNhap + "không phải là năm nhuận");
+    }
+</script>
+</body>
+</html>
